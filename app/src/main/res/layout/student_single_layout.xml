@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="oguuz.alim.sports_club.Add_Student"
+    android:background="@color/colorPrimary"
+    android:layout_marginBottom="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+    <TextView
+        android:id="@+id/textname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/photo"
+        android:layout_alignStart="@+id/photo"
+        android:layout_below="@+id/photo"
+        android:layout_marginTop="21dp"
+        android:text="NAME:"
+        android:textColor="#a8a8a8" />
+
+    <TextView
+        android:id="@+id/textsurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textname"
+        android:layout_alignStart="@+id/textname"
+        android:layout_below="@+id/textname"
+        android:layout_marginTop="15dp"
+        android:text="SURNAME:"
+        android:textColor="#a8a8a8" />
+
+    <TextView
+        android:id="@+id/textbirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textsurname"
+        android:layout_alignStart="@+id/textsurname"
+        android:layout_below="@+id/textsurname"
+        android:layout_marginTop="15dp"
+        android:text="DATE OF BIRTH"
+        android:textColor="#a8a8a8" />
+
+    <TextView
+        android:id="@+id/textmother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textbirth"
+        android:layout_alignStart="@+id/textbirth"
+        android:layout_below="@+id/textbirth"
+        android:layout_marginTop="15dp"
+        android:text="NAME OF MOTHER:"
+        android:textColor="#a8a8a8" />
+
+    <TextView
+        android:id="@+id/textfather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textmother"
+        android:layout_alignStart="@+id/textmother"
+        android:layout_below="@+id/textmother"
+        android:layout_marginTop="15dp"
+        android:text="NAME OF FATHER:"
+        android:textColor="#a8a8a8" />
+
+
+    <TextView
+        android:id="@+id/textphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textfather"
+        android:layout_alignStart="@+id/textfather"
+        android:layout_below="@+id/textfather"
+        android:layout_marginTop="15dp"
+        android:text="PHONE:"
+        android:textColor="#a8a8a8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textphone"
+        android:layout_alignStart="@+id/textphone"
+        android:layout_below="@+id/textphone"
+        android:layout_marginTop="15dp"
+        android:text="ADDRESS:"
+        android:textColor="#a8a8a8"
+        android:id="@+id/textaddress" />
+
+    <TextView
+        android:id="@+id/textregdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/photo"
+        android:layout_toEndOf="@+id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="DATE OF REG:"
+        android:textColor="#a8a8a8" />
+
+    <TextView
+        android:id="@+id/single_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textregdate"
+        android:layout_alignRight="@+id/textregdate"
+        android:layout_below="@+id/textregdate"
+        android:layout_marginTop="13dp"
+        android:textColor="@color/buttonTextColor" />
+
+
+    <TextView
+        android:id="@+id/single_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textsurname"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="TextView"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed" />
+
+    <TextView
+        android:id="@+id/single_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textbirth"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor" />
+
+    <TextView
+        android:id="@+id/single_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textmother"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor" />
+
+    <TextView
+        android:id="@+id/single_mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textfather"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor" />
+
+    <TextView
+        android:id="@+id/single_father"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textphone"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor" />
+
+    <TextView
+        android:id="@+id/single_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textaddress"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor" />
+
+    <TextView
+        android:id="@+id/single_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textphone"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@id/photo"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_marginRight="10dp"
+        android:text="TextView"
+        android:textColor="@color/buttonTextColor" />
+
+    <TextView
+        android:id="@+id/single_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_registration"
+        android:layout_alignEnd="@+id/single_registration"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="8"
+        android:textColor="@color/buttonTextColor"
+        android:textSize="50dp" />
+
+
+</RelativeLayout>

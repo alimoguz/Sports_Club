@@ -1,0 +1,39 @@
+package oguuz.alim.sports_club;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
+public class StartActivity extends AppCompatActivity {
+    private Button mRegBtn;
+    private Button mSignIn;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_start);
+
+        this.setTitle("SIGN OR REGISTER");
+
+        mRegBtn=(Button) findViewById(R.id.start_reg_btn);
+        mRegBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent reg_intent=new Intent(StartActivity.this, RegisterActivity.class);
+                startActivity(reg_intent);
+            }
+        });
+
+        mSignIn= (Button) findViewById(R.id.start_login_btn);
+        mSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent signin_intent=new Intent(StartActivity.this, LoginActivity.class);
+                startActivity(signin_intent);
+            }
+        });
+    }
+}
